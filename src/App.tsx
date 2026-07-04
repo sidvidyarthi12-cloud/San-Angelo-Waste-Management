@@ -3,7 +3,9 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import ScrollToTop from './components/ScrollToTop'
 import About from './pages/About'
+import Apply from './pages/Apply'
 import Contact from './pages/Contact'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 import Home from './pages/Home'
 import LocationPage from './pages/LocationPage'
 import NotFound from './pages/NotFound'
@@ -23,6 +25,8 @@ export default function App() {
           <Route path="/locations/:slug" element={<LocationPage />} />
           <Route path="/service-areas" element={<ServiceAreas />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/apply" element={<Apply />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

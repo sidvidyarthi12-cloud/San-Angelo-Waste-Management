@@ -49,6 +49,12 @@ export default function Footer() {
               <li>
                 <Link to="/contact">Get a Quote</Link>
               </li>
+              <li>
+                <Link to="/apply">Apply for a Job</Link>
+              </li>
+              <li>
+                <Link to="/privacy-policy">Privacy Policy</Link>
+              </li>
             </ul>
           </div>
           <div>

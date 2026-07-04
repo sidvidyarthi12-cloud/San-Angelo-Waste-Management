@@ -129,8 +129,33 @@ export default function Home() {
         <div className="container">
           <div className="split">
             <div className="split-media">
-              <ServiceIcon name="septic" />
+              <ServiceIcon name="trailer" />
             </div>
+            <div className="split-content">
+              <span className="eyebrow">Restroom Trailers</span>
+              <h2>Luxury Trailers for Events Worth Remembering</h2>
+              <p>
+                Weddings, corporate gatherings, and VIP hospitality call for more than a
+                standard unit. Our climate-controlled restroom trailers bring flushing
+                toilets, running water, and real comfort anywhere your event takes you.
+              </p>
+              <ul className="check-list">
+                <li>2, 4, and 8 station trailer options</li>
+                <li>Heating, A/C, and interior lighting</li>
+                <li>Running water sinks and vanity mirrors</li>
+                <li>Delivery, setup, and teardown included</li>
+              </ul>
+              <Link to="/services/restroom-trailers" className="btn btn--navy">
+                View Trailer Options
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="split">
             <div className="split-content">
               <span className="eyebrow">Septic Services</span>
               <h2>Licensed Septic Pumping &amp; Holding Tanks</h2>
@@ -148,6 +173,9 @@ export default function Home() {
               <Link to="/services/septic-services" className="btn btn--navy">
                 View Septic Services
               </Link>
+            </div>
+            <div className="split-media">
+              <ServiceIcon name="septic" />
             </div>
           </div>
         </div>

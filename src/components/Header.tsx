@@ -14,8 +14,11 @@ export default function Header() {
           <span>
             Serving San Angelo &amp; West Texas · {COMPANY.hours}
           </span>
-          <span>
+          <span className="topbar-links">
             24/7 Emergency: <a href={COMPANY.emergencyPhoneHref}>{COMPANY.emergencyPhone}</a>
+            <Link to="/apply" className="topbar-apply">
+              Apply
+            </Link>
           </span>
         </div>
       </div>

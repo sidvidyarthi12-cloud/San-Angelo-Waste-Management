@@ -16,7 +16,8 @@
       "Bash(curl -s -X POST \"https://firestore.googleapis.com/v1/projects/san-angelo-waste-management/databases/\\(default\\)/documents/quoteRequests\" -H \"Content-Type: application/json\" -d '{\"fields\":{\"name\":{\"stringValue\":\"probe\"},\"email\":{\"stringValue\":\"probe@example.com\"},\"phone\":{\"stringValue\":\"1234567\"},\"service\":{\"stringValue\":\"probe\"},\"message\":{\"stringValue\":\"\"},\"source\":{\"stringValue\":\"website\"}}}')",
       "Bash(firebase login:list)",
       "Bash(firebase deploy *)",
-      "Bash(git -c 'user.name=Prajya Vidyarthi' -c user.email=prvidyarthi@gmail.com commit -m 'Fix Firestore rules \\(service is a reserved word\\), add launch config *)"
+      "Bash(git -c 'user.name=Prajya Vidyarthi' -c user.email=prvidyarthi@gmail.com commit -m 'Fix Firestore rules \\(service is a reserved word\\), add launch config *)",
+      "Bash(git -c 'user.name=Prajya Vidyarthi' -c user.email=prvidyarthi@gmail.com commit -m 'Add restroom trailers home section, privacy policy, consent checkbox, job application page *)"
     ]
   }
 }

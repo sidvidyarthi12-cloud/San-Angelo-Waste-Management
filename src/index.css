@@ -716,6 +716,139 @@ h3 {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* ---------- Checkbox + radio fields ---------- */
+.checkbox-field label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.92rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.checkbox-field input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  flex-shrink: 0;
+  accent-color: var(--red);
+  cursor: pointer;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+
+.radio-option {
+  display: flex !important;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-body) !important;
+  font-weight: 400 !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  font-size: 0.95rem !important;
+  color: var(--text) !important;
+  cursor: pointer;
+  margin-bottom: 0 !important;
+}
+
+.radio-option input {
+  width: 16px !important;
+  height: 16px;
+  accent-color: var(--red);
+  cursor: pointer;
+}
+
+/* ---------- Apply form ---------- */
+.apply-form {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.apply-form fieldset {
+  border: none;
+  border-top: 2px solid var(--gray-line);
+  padding: 26px 0 8px;
+  margin-bottom: 18px;
+}
+
+.apply-form legend {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--navy);
+  padding-right: 14px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 24px;
+}
+
+.form-note {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+/* ---------- Topbar apply link ---------- */
+.topbar-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.topbar-apply {
+  background: var(--red);
+  color: var(--white) !important;
+  padding: 3px 14px;
+  border-radius: 4px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: background 0.2s ease;
+}
+
+.topbar-apply:hover {
+  background: var(--red-dark);
+}
+
+/* ---------- Legal / privacy content ---------- */
+.legal-content {
+  max-width: 780px;
+}
+
+.legal-content h2 {
+  font-size: 1.5rem;
+  margin: 32px 0 12px;
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content p,
+.legal-content li {
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.legal-content ul {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
 /* ---------- Footer ---------- */
 .footer {
   background: var(--navy-dark);
@@ -824,7 +957,8 @@ h3 {
   }
 
   .split,
-  .quote-layout {
+  .quote-layout,
+  .form-row {
     grid-template-columns: 1fr;
   }
 

@@ -44,6 +44,7 @@ export interface QuoteRequest {
   phone: string
   service: string
   message: string
+  consent: boolean
 }
 
 export async function submitQuoteRequest(quote: QuoteRequest): Promise<void> {
@@ -53,4 +54,21 @@ export async function submitQuoteRequest(quote: QuoteRequest): Promise<void> {
     source: 'website',
   })
   trackEvent('quote_request_submitted', { service: quote.service })
+}
+
+export interface JobApplication {
+  name: string
+  email: string
+  phone: string
+  details: Record<string, string | string[] | boolean>
+  consent: boolean
+}
+
+export async function submitJobApplication(application: JobApplication): Promise<void> {
+  await addDoc(collection(db, 'jobApplications'), {
+    ...application,
+    createdAt: serverTimestamp(),
+    source: 'website',
+  })
+  trackEvent('job_application_submitted')
 }

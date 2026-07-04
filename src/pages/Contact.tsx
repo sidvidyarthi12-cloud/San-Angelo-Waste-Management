@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from 'react'
+import { Link } from 'react-router-dom'
 import { ClockIcon, MailIcon, PhoneIcon, PinIcon } from '../components/Icons'
 import { COMPANY, SERVICES } from '../data/site'
 import { submitQuoteRequest } from '../firebase'
@@ -9,6 +10,7 @@ interface FieldErrors {
   name?: string
   email?: string
   phone?: string
+  consent?: string
 }
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -20,6 +22,7 @@ export default function Contact() {
   const [phone, setPhone] = useState('')
   const [service, setService] = useState('')
   const [message, setMessage] = useState('')
+  const [consent, setConsent] = useState(false)
   const [status, setStatus] = useState<Status>('idle')
   const [errors, setErrors] = useState<FieldErrors>({})
 
@@ -28,6 +31,7 @@ export default function Contact() {
     if (!name.trim()) next.name = 'Please enter your name.'
     if (!EMAIL_RE.test(email.trim())) next.email = 'Please enter a valid email address.'
     if (!PHONE_RE.test(phone.trim())) next.phone = 'Please enter a valid phone number.'
+    if (!consent) next.consent = 'Please agree to the privacy policy to continue.'
     setErrors(next)
     return Object.keys(next).length === 0
   }
@@ -44,6 +48,7 @@ export default function Contact() {
         phone: phone.trim(),
         service: service || 'Not specified',
         message: message.trim(),
+        consent: true,
       })
       setStatus('success')
       setName('')
@@ -51,6 +56,7 @@ export default function Contact() {
       setPhone('')
       setService('')
       setMessage('')
+      setConsent(false)
     } catch {
       setStatus('error')
     }
@@ -140,6 +146,22 @@ export default function Contact() {
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="Location, timeline, and anything else we should know (optional)"
                 />
+              </div>
+
+              <div className="form-field checkbox-field">
+                <label htmlFor="consent">
+                  <input
+                    id="consent"
+                    type="checkbox"
+                    checked={consent}
+                    onChange={(e) => setConsent(e.target.checked)}
+                  />
+                  <span>
+                    I agree to the <Link to="/privacy-policy">Privacy Policy</Link> and consent
+                    to being contacted about my quote request. *
+                  </span>
+                </label>
+                {errors.consent && <div className="field-error">{errors.consent}</div>}
               </div>
 
               <button type="submit" className="btn btn--primary" disabled={status === 'submitting'}>
