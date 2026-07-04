@@ -1,0 +1,28 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Public visitors may only CREATE quote requests — never read,
+    // update, or delete them. Reading submissions requires the
+    // Firebase console or an authenticated admin tool.
+    match /quoteRequests/{docId} {
+      allow create: if isValidQuote();
+      allow read, update, delete: if false;
+    }
+
+    // Everything else is locked down.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isValidQuote() {
+      let d = request.resource.data;
+      return d.name is string && d.name.size() > 0 && d.name.size() <= 200
+        && d.email is string && d.email.size() > 3 && d.email.size() <= 320
+        && d.phone is string && d.phone.size() >= 7 && d.phone.size() <= 30
+        && d.service is string && d.service.size() <= 100
+        && d.message is string && d.message.size() <= 5000
+        && d.source == 'website';
+    }
+  }
+}

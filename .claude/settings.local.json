@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.forzasiteservices.com)",
+      "Bash(curl -s https://www.forzasiteservices.com/ -o /private/tmp/claude-501/-Users-prajyavidyarthi-Desktop-San-Angelo-Waste-Mangment/3e5c808d-97b9-4fe9-814d-a2ec34df82a4/scratchpad/forza.html)",
+      "Bash(npm --version)",
+      "Bash(git --version)",
+      "Bash(npm create *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(git init *)",
+      "Bash(git remote *)",
+      "Bash(git add *)",
+      "Bash(git -c 'user.name=Prajya Vidyarthi' -c user.email=prvidyarthi@gmail.com commit -m 'Initial site: React + Vite + Firebase, all pages, quote form *)"
+    ]
+  }
+}
