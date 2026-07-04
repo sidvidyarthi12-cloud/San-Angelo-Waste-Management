@@ -6,7 +6,7 @@ service cloud.firestore {
     // update, or delete them. Reading submissions requires the
     // Firebase console or an authenticated admin tool.
     match /quoteRequests/{docId} {
-      allow create: if isValidQuote();
+      allow create: if isValidQuote(request.resource.data);
       allow read, update, delete: if false;
     }
 
@@ -14,15 +14,16 @@ service cloud.firestore {
     match /{document=**} {
       allow read, write: if false;
     }
-
-    function isValidQuote() {
-      let d = request.resource.data;
-      return d.name is string && d.name.size() > 0 && d.name.size() <= 200
-        && d.email is string && d.email.size() > 3 && d.email.size() <= 320
-        && d.phone is string && d.phone.size() >= 7 && d.phone.size() <= 30
-        && d.service is string && d.service.size() <= 100
-        && d.message is string && d.message.size() <= 5000
-        && d.source == 'website';
-    }
   }
+}
+
+// Note: 'service' is a reserved word in the rules language, so that
+// field must be accessed with bracket notation.
+function isValidQuote(d) {
+  return d.name is string && d.name.size() > 0 && d.name.size() <= 200
+    && d.email is string && d.email.size() > 3 && d.email.size() <= 320
+    && d.phone is string && d.phone.size() >= 7 && d.phone.size() <= 30
+    && d['service'] is string && d['service'].size() <= 100
+    && d.message is string && d.message.size() <= 5000
+    && d.source == 'website';
 }
