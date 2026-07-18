@@ -8,7 +8,7 @@ export const COMPANY = {
   email: 'quotes@sanangelowaste.com',
   address: '2450 N Bell Street, San Angelo, TX 76903',
   hours: 'Mon–Fri 7:00 AM – 6:00 PM · Sat 8:00 AM – 2:00 PM',
-  tagline: 'Turnkey Dumpster Rentals | Portable Toilets | Septic Services',
+  tagline: 'Fluid Logistics | Dumpster Rentals | Portable Toilets | Septic Services',
 }
 
 export interface ServiceInfo {
@@ -17,10 +17,24 @@ export interface ServiceInfo {
   shortTitle: string
   blurb: string
   bullets: string[]
-  icon: 'dumpster' | 'toilet' | 'trailer' | 'septic' | 'fence' | 'washout'
+  icon: 'dumpster' | 'toilet' | 'trailer' | 'septic' | 'fence' | 'washout' | 'fluid'
 }
 
 export const SERVICES: ServiceInfo[] = [
+  {
+    slug: 'fluid-logistics',
+    title: 'Fluid Logistics & Water Hauling',
+    shortTitle: 'Fluid Logistics',
+    blurb:
+      'Bulk liquid transport for drilling, fracking, and renewable energy sites. Our fleet handles bulk water delivery, vacuum truck services, and safe fluid transfer to and from your job site.',
+    bullets: [
+      'Bulk water delivery for drilling & fracking',
+      'Vacuum truck services',
+      'Fluid transfer & safe liquids management',
+      'Support for oil, gas, wind & solar sites',
+    ],
+    icon: 'fluid',
+  },
   {
     slug: 'roll-off-dumpsters',
     title: 'Roll Off Dumpster Rentals',

@@ -4,6 +4,27 @@ import { ServiceIcon } from '../components/Icons'
 import { LOCATIONS, SERVICES } from '../data/site'
 
 const SERVICE_DETAILS: Record<string, { heading: string; paragraphs: string[]; faqs: { q: string; a: string }[] }> = {
+  'fluid-logistics': {
+    heading: 'Bulk Liquid Transport, When and Where You Need It',
+    paragraphs: [
+      'Whether you’re drilling, fracking, or breaking ground on a new wind or solar farm, we provide the bulk liquid transport your project demands. Our fleet handles bulk water delivery, vacuum truck services, and fluid transfer — moving and managing liquids safely to and from your job site.',
+      'One dependable vendor keeps your fluid logistics on schedule, so your crews stay productive and your site stays compliant from the first load to the last.',
+    ],
+    faqs: [
+      {
+        q: 'What kinds of fluids do you haul?',
+        a: 'We handle bulk fresh water for drilling and fracking, plus produced water and other job-site liquids through our vacuum truck services. Tell us what your project involves and we’ll match the right equipment.',
+      },
+      {
+        q: 'Do you support renewable energy sites?',
+        a: 'Yes. We deliver bulk water and fluid logistics for wind and solar construction just as we do for oil and gas — dust control, compaction water, and site support are all part of what we do.',
+      },
+      {
+        q: 'How do I schedule hauling?',
+        a: 'Call us with your location, volume, and timeline and we’ll build a delivery schedule around your operation. Recurring and on-demand loads are both available.',
+      },
+    ],
+  },
   'roll-off-dumpsters': {
     heading: 'Roll Off Dumpsters Sized for Any Job',
     paragraphs: [

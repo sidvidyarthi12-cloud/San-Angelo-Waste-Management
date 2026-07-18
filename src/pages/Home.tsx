@@ -45,14 +45,28 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section section--gray">
+        <div className="container">
+          <div className="section-heading">
+            <span className="eyebrow">Energy &amp; Industrial Services</span>
+            <h2>Comprehensive Site Logistics &amp; Support</h2>
+            <p>
+              Streamline your job site operations with a single, dependable vendor. We provide
+              full-scale fluid logistics and waste management to keep oil, gas, and renewable
+              energy sites running safely, efficiently, and on schedule.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="container">
           <div className="section-heading">
             <span className="eyebrow">What We Do</span>
             <h2>Site Services Done Right</h2>
             <p>
-              From the first dumpster drop to the final septic pump-out, we keep construction
-              sites, events, and businesses across the Concho Valley running clean.
+              From bulk water hauling to the final septic pump-out, we keep construction sites,
+              energy projects, events, and businesses across West Texas running clean.
             </p>
           </div>
           <div className="card-grid">
@@ -77,17 +91,19 @@ export default function Home() {
               <ServiceIcon name="dumpster" />
             </div>
             <div className="split-content">
-              <span className="eyebrow">Roll Off Dumpsters</span>
-              <h2>The Right Container, On Time, Every Time</h2>
+              <span className="eyebrow">Site Rentals &amp; Waste Management</span>
+              <h2>Keep Your Footprint Clean, Organized &amp; Compliant</h2>
               <p>
-                Whether you’re gutting a kitchen or running a commercial build, we size the
-                container to the job and handle every swap-out on your schedule.
+                We supply comprehensive solid waste management, including heavy-duty roll-off
+                dumpster rentals, garbage/refuse hauling, and essential site equipment. From
+                initial setup to final tear-down, we ensure your waste logistics are handled
+                without delay.
               </p>
               <ul className="check-list">
-                <li>20, 30, and 40 yard roll off containers</li>
-                <li>Residential, commercial, and oilfield projects</li>
-                <li>Flat-rate pricing — no fuel or hidden surcharges</li>
-                <li>Fast swap-outs so your crew never waits</li>
+                <li>Heavy-duty roll-off dumpster rentals</li>
+                <li>Garbage &amp; refuse hauling</li>
+                <li>Essential site equipment</li>
+                <li>Handled from initial setup to final tear-down</li>
               </ul>
               <Link to="/services/roll-off-dumpsters" className="btn btn--navy">
                 View Dumpster Options
@@ -176,6 +192,35 @@ export default function Home() {
             </div>
             <div className="split-media">
               <ServiceIcon name="septic" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--gray">
+        <div className="container">
+          <div className="split">
+            <div className="split-media">
+              <ServiceIcon name="fluid" />
+            </div>
+            <div className="split-content">
+              <span className="eyebrow">Fluid Logistics &amp; Water Hauling</span>
+              <h2>Bulk Liquid Transport, When and Where You Need It</h2>
+              <p>
+                Whether you’re drilling, fracking, or breaking ground on a new wind or solar
+                farm, we provide the bulk liquid transport your project demands. Our fleet
+                handles bulk water delivery, vacuum truck services, and fluid transfer — moving
+                and managing liquids safely to and from your job site.
+              </p>
+              <ul className="check-list">
+                <li>Bulk water delivery for drilling &amp; fracking</li>
+                <li>Vacuum truck services</li>
+                <li>Fluid transfer &amp; safe liquids management</li>
+                <li>Support for oil, gas, wind &amp; solar sites</li>
+              </ul>
+              <Link to="/services/fluid-logistics" className="btn btn--navy">
+                View Fluid Logistics
+              </Link>
             </div>
           </div>
         </div>

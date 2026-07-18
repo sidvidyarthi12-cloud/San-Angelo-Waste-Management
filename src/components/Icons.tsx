@@ -67,6 +67,19 @@ export function WashoutIcon({ className }: IconProps) {
   )
 }
 
+export function FluidIcon({ className }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 64 64" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="4" y="20" width="33" height="16" rx="8" />
+      <path d="M37 24h8l7 8v4H37z" />
+      <path d="M6 36h46" />
+      <path d="M12 28h17" />
+      <circle cx="17" cy="43" r="5" />
+      <circle cx="43" cy="43" r="5" />
+    </svg>
+  )
+}
+
 export function PhoneIcon({ className }: IconProps) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -120,6 +133,7 @@ const ICONS = {
   septic: SepticIcon,
   fence: FenceIcon,
   washout: WashoutIcon,
+  fluid: FluidIcon,
 }
 
 export function ServiceIcon({ name, className }: { name: keyof typeof ICONS; className?: string }) {

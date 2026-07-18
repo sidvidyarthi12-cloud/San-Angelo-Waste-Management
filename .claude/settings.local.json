@@ -17,7 +17,8 @@
       "Bash(firebase login:list)",
       "Bash(firebase deploy *)",
       "Bash(git -c 'user.name=Prajya Vidyarthi' -c user.email=prvidyarthi@gmail.com commit -m 'Fix Firestore rules \\(service is a reserved word\\), add launch config *)",
-      "Bash(git -c 'user.name=Prajya Vidyarthi' -c user.email=prvidyarthi@gmail.com commit -m 'Add restroom trailers home section, privacy policy, consent checkbox, job application page *)"
+      "Bash(git -c 'user.name=Prajya Vidyarthi' -c user.email=prvidyarthi@gmail.com commit -m 'Add restroom trailers home section, privacy policy, consent checkbox, job application page *)",
+      "Bash(git -c 'user.name=Prajya Vidyarthi' -c user.email=prvidyarthi@gmail.com commit -m 'Add fluid logistics service, site logistics band, update waste management copy *)"
     ]
   }
 }
