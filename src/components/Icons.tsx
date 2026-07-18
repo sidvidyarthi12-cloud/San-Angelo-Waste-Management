@@ -115,7 +115,7 @@ export function ClockIcon({ className }: IconProps) {
 export function LogoMark({ className }: IconProps) {
   return (
     <svg className={className} viewBox="0 0 64 64">
-      <rect width="64" height="64" rx="10" fill="#bf240e" />
+      <rect width="64" height="64" rx="10" fill="#db3a24" />
       <path d="M14 26h36l-5 22H19z" fill="#ffffff" />
       <path d="M11 26h42v-4H11z" fill="#f5f5f5" opacity="0.9" />
       <path d="M26 18h12l3 4H23z" fill="#f5f5f5" />
