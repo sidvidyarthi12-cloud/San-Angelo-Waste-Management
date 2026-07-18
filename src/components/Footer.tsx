@@ -11,11 +11,11 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-about">
-            <Link to="/" className="logo" aria-label="San Angelo Waste Management home">
+            <Link to="/" className="logo" aria-label="M&amp;B Rentals home">
               <LogoMark className="logo-mark" />
               <div className="logo-text">
-                San Angelo
-                <span>Waste Management</span>
+                M&amp;B
+                <span>Rentals</span>
               </div>
             </Link>
             <p>

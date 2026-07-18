@@ -24,11 +24,11 @@ export default function Header() {
       </div>
       <header className="header">
         <div className="container">
-          <Link to="/" className="logo" onClick={close} aria-label="San Angelo Waste Management home">
+          <Link to="/" className="logo" onClick={close} aria-label="M&amp;B Rentals home">
             <LogoMark className="logo-mark" />
             <div className="logo-text">
-              San Angelo
-              <span>Waste Management</span>
+              M&amp;B
+              <span>Rentals</span>
             </div>
           </Link>
           <button

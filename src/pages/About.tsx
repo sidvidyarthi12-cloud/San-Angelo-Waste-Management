@@ -30,7 +30,7 @@ export default function About() {
           <span className="eyebrow">About Us</span>
           <h1>West Texas Roots. Job Site Standards.</h1>
           <p>
-            San Angelo Waste Management is a locally owned site services company built on one
+            M&amp;B Rentals is a locally owned site services company built on one
             simple idea: treat every job site like it’s our own.
           </p>
         </div>

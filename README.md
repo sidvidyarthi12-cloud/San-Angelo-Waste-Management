@@ -1,6 +1,6 @@
-# San Angelo Waste Management
+# M&B Rentals
 
-Marketing website for San Angelo Waste Management — roll off dumpster rentals, portable
+Marketing website for M&B Rentals — fluid logistics, roll off dumpster rentals, portable
 toilets, restroom trailers, and septic services across West Texas.
 
 Built with **React + TypeScript + Vite**, backed by **Firebase** (Firestore for quote
