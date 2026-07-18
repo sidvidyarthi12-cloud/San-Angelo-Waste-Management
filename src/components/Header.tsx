@@ -12,7 +12,7 @@ export default function Header() {
       <div className="topbar">
         <div className="container">
           <span>
-            Serving San Angelo &amp; West Texas · {COMPANY.hours}
+            Serving San Angelo &amp; West Texas
           </span>
           <span className="topbar-links">
             24/7 Emergency: <a href={COMPANY.emergencyPhoneHref}>{COMPANY.emergencyPhone}</a>
