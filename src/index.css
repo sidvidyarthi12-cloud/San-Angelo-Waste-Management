@@ -25,7 +25,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 body {
@@ -115,8 +115,8 @@ h3 {
 .eyebrow {
   display: inline-block;
   font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: 0.95rem;
+  font-weight: 700;
+  font-size: 1.12rem;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: var(--red);

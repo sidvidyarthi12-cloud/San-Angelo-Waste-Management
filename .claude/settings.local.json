@@ -19,7 +19,8 @@
       "Bash(git -c 'user.name=Prajya Vidyarthi' -c user.email=prvidyarthi@gmail.com commit -m 'Fix Firestore rules \\(service is a reserved word\\), add launch config *)",
       "Bash(git -c 'user.name=Prajya Vidyarthi' -c user.email=prvidyarthi@gmail.com commit -m 'Add restroom trailers home section, privacy policy, consent checkbox, job application page *)",
       "Bash(git -c 'user.name=Prajya Vidyarthi' -c user.email=prvidyarthi@gmail.com commit -m 'Add fluid logistics service, site logistics band, update waste management copy *)",
-      "Bash(git -c 'user.name=Prajya Vidyarthi' -c user.email=prvidyarthi@gmail.com commit -m 'Rebrand to M&B Rentals, lighten top blue, boost text contrast and size *)"
+      "Bash(git -c 'user.name=Prajya Vidyarthi' -c user.email=prvidyarthi@gmail.com commit -m 'Rebrand to M&B Rentals, lighten top blue, boost text contrast and size *)",
+      "Bash(git -c 'user.name=Prajya Vidyarthi' -c user.email=prvidyarthi@gmail.com commit -m 'Enlarge and bold the eyebrow text, increase base body font size to 20px *)"
     ]
   }
 }
